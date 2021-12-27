@@ -23,7 +23,7 @@ get_platform() {
 get_arch() {
   local platform=$(get_platform)
   if [[ "${platform}" == "osx" ]]; then
-    echo "amd64"
+    echo "x86_64"
   else
     echo "$(uname -m)"
   fi
